@@ -21,36 +21,30 @@
                 по адрессу: г. Брянск 2-я Почепская ул., 35А
             </p>
         </div>
-        <iframe
-            src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae1dddafe32065a4a7fbcecc4e0919f583e3a7eeef3577c2d6a7da3632c76ea7f&amp;source=constructor"
-            width="100%"
-            height="450"
-            frameborder="0"
-            class="invite-location__map"
-        ></iframe>
+        <a href="https://yandex.ru/maps/-/CHfOBC0J" target="_blank" class="invite-location__map">Открыть карту</a>
     </Container>
 </div>
 </template>
 
 <style scoped lang="scss">
 .invite-location {
-    height: 100vh;
     position: relative;
     color: #292929;
+    padding-bottom: 100px;
 
     &__background {
         width: 1090px;
         position: absolute;
-        top: 0;
+        top: -30%;
         z-index: -1;
         opacity: 0.2;
 
         &--1 {
-            left: 0%;
+            left: 0;
             transform: translateX(-50%);
         }
         &--2 {
-            right: 0%;
+            right: 0;
             transform: translateX(50%) rotate(90deg);
         }
     }
@@ -102,6 +96,14 @@
 
     &__map {
         margin-top: 40px;
+        min-height: 40px;
+        min-width: 250px;
+        background-image: linear-gradient(90deg, #aa82d4 50%, #e0c8f7);
+        border-radius: 20px;
+        padding: 15px;
+        color: #fff;
+        text-align: center;
+        display: inline-block;
     }
 }
 
