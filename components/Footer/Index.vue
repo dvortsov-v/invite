@@ -1,0 +1,16 @@
+<template>
+    <footer class="footer">
+
+    </footer>
+</template>
+<script setup lang="ts">
+
+</script>
+<style scoped lang="scss">
+.footer {
+
+    &__wrapper {
+
+    }
+}
+</style>

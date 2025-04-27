@@ -1,0 +1,31 @@
+body {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  line-height: 1.33;
+  font-family: 'GolosText', sans-serif;
+  background-color: var(--white);
+  box-sizing: border-box;
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+#__nuxt,
+.app,
+.default-layout {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.default-layout {
+  &__wrapper {
+    flex: 1 0 auto;
+  }
+
+  &__footer {
+    flex: 0 0 auto;
+  }
+}
