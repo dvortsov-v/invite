@@ -33,9 +33,10 @@
 }
 
 .invite-intro {
-    //background: url('public/picture/background-intro_2.png') center center no-repeat;
-    //background-size: 100% 100%;
+    position: relative;
     height: 100vh;
+    background: url('public/picture/background-intro.png') center center no-repeat;
+    background-size: 100% 100%;
 
     &__container {
         height: 100%;

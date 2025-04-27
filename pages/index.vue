@@ -7,23 +7,15 @@ useHead({
 <template>
     <div class="invite">
         <div class="invite__wrapper">
-            <img src="/picture/main.png" alt="" class="invite__background">
             <Intro class="invite__intro"/>
             <Welcome class="invite__time"/>
+            <Location class="invite__location"/>
         </div>
     </div>
 </template>
 
-<style scoped lang="scssgu">
+<style scoped lang="scss">
 .invite {
-    position: relative;
-    &__background {
-        width: 100%;
-        position: absolute;
-        left: 50%;
-        top: 0;
-        transform: translateX(-50%);
-        z-index: -1;
-    }
+    overflow: hidden;
 }
 </style>
