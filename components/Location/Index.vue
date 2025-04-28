@@ -3,13 +3,14 @@
 </script>
 
 <template>
-<div class="invite-location">
-    <img src="/picture/background-welcome.jpg" alt="bg" class="invite-location__background invite-location__background--1">
-    <img src="/picture/background-welcome.jpg" alt="bg" class="invite-location__background invite-location__background--2">
-    <Container class="invite-location__container">
-        <h3 class="invite-location__title">
+    <Section class="invite-location">
+        <template #background>
+            <img src="/picture/background-welcome.jpg" alt="bg" class="invite-location__background invite-location__background--1">
+            <img src="/picture/background-welcome.jpg" alt="bg" class="invite-location__background invite-location__background--2">
+        </template>
+        <template #title>
             Локация
-        </h3>
+        </template>
         <div class="invite-location__description">
             <p class="invite-location__text">
                 Свадебное торжество пройдёт в
@@ -21,17 +22,12 @@
                 по адрессу: г. Брянск 2-я Почепская ул., 35А
             </p>
         </div>
-        <a href="https://yandex.ru/maps/-/CHfOBC0J" target="_blank" class="invite-location__map">Открыть карту</a>
-    </Container>
-</div>
+        <InviteLink href="https://yandex.ru/maps/-/CHfOBC0J" target="_blank" class="invite-location__map">Открыть карту</InviteLink>
+    </Section>
 </template>
 
 <style scoped lang="scss">
 .invite-location {
-    position: relative;
-    color: #292929;
-    padding-bottom: 100px;
-
     &__background {
         width: 1090px;
         position: absolute;
@@ -54,13 +50,6 @@
         flex-direction: column;
         align-items: center;
         padding-top: 5vh;
-    }
-
-    &__title {
-        position: relative;
-        font-size: 50px;
-        font-family: 'AgoniaLyubvi';
-
     }
 
     &__description {
@@ -92,18 +81,6 @@
         max-width: 700px;
         text-align: center;
         margin-top: 20px;
-    }
-
-    &__map {
-        margin-top: 40px;
-        min-height: 40px;
-        min-width: 250px;
-        background-image: linear-gradient(90deg, #aa82d4 50%, #e0c8f7);
-        border-radius: 20px;
-        padding: 15px;
-        color: #fff;
-        text-align: center;
-        display: inline-block;
     }
 }
 

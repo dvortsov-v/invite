@@ -11,6 +11,7 @@
                 :class="`calendar__item--${num}`"
                 class="calendar__item"
             >
+                <svg-icon v-if="num === 8" name="ring" class="calendar__icon"/>
                 <span class="calendar__number">{{ num }}</span>
             </li>
         </ul>
@@ -55,30 +56,23 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        position: relative;
+
         &--1 {
             grid-column-start: 5;
         }
+    }
 
-        &--8 {
-            position: relative;
-
-            #{$self}__number {
-                position: relative;
-            }
-
-            &::before {
-                content: '';
-                position: absolute;
-                top: 28%;
-                left: 50%;
-                width: 90px;
-                height: 90px;
-                transform: translate(-50%, -50%);
-                background: url('public/picture/heart.png') center center / contain no-repeat;
-                animation: rotating 3s linear forwards infinite;
-                opacity: 0.65;
-            }
-        }
+    &__icon {
+        position: absolute;
+        top: 28%;
+        left: 50%;
+        width: 30px;
+        height: 30px;
+        transform: translate(-50%, -50%);
+        animation: rotating 3s linear forwards infinite;
+        opacity: 0.65;
+        fill: #aa82d4;
     }
 
     &__number {

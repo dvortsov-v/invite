@@ -11,6 +11,9 @@ useHead({
             <Welcome class="invite__time"/>
             <Location class="invite__location"/>
             <Programm class="invite__programm"/>
+            <Dresscode class="invite__dresscode"/>
+            <Detail class="invite__detail"/>
+            <Questionnaire class="invite__questionnaire"/>
         </div>
     </div>
 </template>

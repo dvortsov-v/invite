@@ -2,7 +2,7 @@
 const list = [
     {
         svg: 'glass',
-        time: '15:00',
+        time: '16:40',
         text: 'Сбор гостей',
     },
     {
@@ -24,39 +24,30 @@ const list = [
 </script>
 
 <template>
-<div class="invite-programm">
-    <Container class="invite-programm__container">
-        <h3 class="invite-programm__title">
+    <Section class="invite-programm">
+        <template #title>
             Программа дня
-        </h3>
+        </template>
         <ul class="invite-programm__list">
             <li v-for="item in list" class="invite-programm__item">
                 <div class="invite-programm__box">
-                    <svg-icon v-if="item.svg" :name="item.svg" class="invite-programm__icon"/>
+                    <svg-icon
+                        v-if="item.svg"
+                        :name="item.svg"
+                        :class="`invite-programm__icon--${item.svg}`"
+                        class="invite-programm__icon"
+                    />
                     <img v-else-if="item.img" :src="item.img" alt="" class="invite-programm__img">
                     <div class="invite-programm__time">{{item.time}}</div>
                 </div>
                 <div class="invite-programm__text">{{item.text}}</div>
             </li>
         </ul>
-    </Container>
-</div>
+    </Section>
 </template>
 
 <style scoped lang="scss">
 .invite-programm {
-    position: relative;
-    color: #292929;
-    padding-bottom: 100px;
-
-    &__container {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 5vh;
-    }
-
     &__list {
         margin-top: 70px;
     }
@@ -85,11 +76,6 @@ const list = [
         align-items: center;
     }
 
-    &__title {
-        position: relative;
-        font-size: 50px;
-        font-family: 'AgoniaLyubvi';
-    }
 
     &__description {
         margin-top: 70px;
@@ -119,6 +105,13 @@ const list = [
         height: 35px;
         fill: #9151d4;
         margin-right: 10px;
+    }
+
+    &__icon {
+        &--time {
+            width: 25px;
+            height: 25px;
+        }
     }
 }
 
