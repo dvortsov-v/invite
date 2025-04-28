@@ -66,6 +66,7 @@ const list = [
         max-width: 700px;
         text-transform: uppercase;
         text-align: center;
+        color: #9151d4;
     }
     &__text {
         position: relative;
