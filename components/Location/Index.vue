@@ -23,6 +23,7 @@
             </p>
         </div>
         <InviteLink href="https://yandex.ru/maps/-/CHfOBC0J" target="_blank" class="invite-location__map">Открыть карту</InviteLink>
+        <svg-icon name="constellation_1" class="invite-location__constellation"/>
     </Section>
 </template>
 
@@ -81,6 +82,12 @@
         max-width: 700px;
         text-align: center;
         margin-top: 20px;
+    }
+
+    &__constellation {
+        width: 250px;
+        height: 90px;
+        margin-top: 50px;
     }
 }
 

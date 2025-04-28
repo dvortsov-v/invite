@@ -15,6 +15,7 @@
                 Определенного дресс-кода на нашем торжестве нет, но мы будем благодарны, если девушки выберут вечерние наряды, а мужчины - классические костюмы
             </p>
         </div>
+        <svg-icon name="constellation_2" class="invite-dresscode__constellation"/>
     </Section>
 </template>
 
@@ -47,6 +48,12 @@
         font-family: 'PlayfairDisplay';
         max-width: 700px;
         text-align: center;
+    }
+
+    &__constellation {
+        height: 200px;
+        margin-top: 50px;
+        transform: rotate(-15deg);
     }
 }
 
