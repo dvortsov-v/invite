@@ -14,8 +14,8 @@ const list = [
 <template>
     <Section class="invite-detail">
         <template #background>
-            <img src="/picture/background-welcome.jpg" alt="bg" class="invite-detail__background invite-detail__background--1">
-            <img src="/picture/background-welcome.jpg" alt="bg" class="invite-detail__background invite-detail__background--2">
+            <img src="/picture/background-welcome.png" alt="bg" class="invite-detail__background invite-detail__background--1">
+            <img src="/picture/background-welcome.png" alt="bg" class="invite-detail__background invite-detail__background--2">
         </template>
         <template #title>
             Детали
@@ -41,7 +41,7 @@ const list = [
         opacity: 0.5;
 
         &--1 {
-            top: 0;
+            top: -50%;
             transform: translateX(-50%) rotate(-90deg);
             left: 0;
         }

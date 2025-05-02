@@ -5,7 +5,7 @@
 <template>
     <Section class="invite-detail">
         <template #background>
-            <img src="/picture/background-welcome.jpg" alt="bg" class="invite-detail__background">
+            <img src="/picture/background-welcome.png" alt="bg" class="invite-detail__background">
         </template>
         <template #title>
             Анкета гостя

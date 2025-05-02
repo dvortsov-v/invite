@@ -72,7 +72,7 @@
         transform: translate(-50%, -50%);
         animation: rotating 3s linear forwards infinite;
         opacity: 0.65;
-        fill: #aa82d4;
+        fill: #72489e;
     }
 
     &__number {

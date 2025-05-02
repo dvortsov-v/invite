@@ -5,7 +5,8 @@
 <template>
     <Section class="invite-welcome">
         <template #background>
-            <img src="/picture/background-welcome.jpg" alt="bg" class="invite-welcome__background">
+            <img src="/picture/background-welcome.png" alt="bg" class="invite-welcome__background invite-welcome__background--1">
+            <img src="/picture/background-welcome.png" alt="bg" class="invite-welcome__background invite-welcome__background--2">
             <svg-icon name="constellation_1" class="invite-welcome__constellation invite-welcome__constellation--1"/>
             <svg-icon name="constellation_2" class="invite-welcome__constellation invite-welcome__constellation--2"/>
         </template>
@@ -29,11 +30,18 @@
     &__background {
         width: 1090px;
         position: absolute;
-        left: 50%;
-        top: -30%;
-        transform: translateX(-50%) rotate(-15deg);
-        z-index: -1;
-        opacity: 0.45;
+        opacity: 0.4;
+
+        &--1 {
+            top: -37%;
+            left: 0;
+            transform: translateX(-50%) rotate(21deg);
+        }
+        &--2 {
+            top: -47%;
+            right: 0;
+            transform: translateX(50%) rotate(31deg);
+        }
     }
 
     &__container {
@@ -66,7 +74,7 @@
         height: 340px;
 
         &--1 {
-            left: 16%;
+            left: 23%;
             top: 54%;
             transform: rotate(45deg);
         }

@@ -31,12 +31,12 @@
         right: 100%;
     }
 }
-
 .invite-intro {
     position: relative;
     height: 100vh;
-    background: url('public/picture/background-intro.png') center center no-repeat;
+    background: #fff url('public/picture/bg-intro.png') center center no-repeat;
     background-size: 100% 100%;
+    color: #292929;
 
     &__container {
         height: 100%;
@@ -65,7 +65,6 @@
     }
 
     &__name {
-        color: #fff;
         font-size: 100px;
         font-family: 'AgoniaLyubvi';
         display: inline-block;
@@ -78,7 +77,7 @@
         }
     }
     &__and {
-        color: #d0bb71;
+        //color: #d0bb71;
         font-size: 100px;
         font-family: 'AgoniaLyubvi';
     }
@@ -89,7 +88,7 @@
         font-family: 'PlayfairDisplay';
         font-style: italic;
         text-align: center;
-        color: #d0bb71;
+        //color: #d0bb71;
         margin-top: 70px;
     }
 

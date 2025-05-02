@@ -4,8 +4,8 @@
 <template>
     <Section class="invite-dresscode">
         <template #background>
-            <img src="/picture/background-welcome.jpg" alt="bg" class="invite-dresscode__background invite-dresscode__background--1">
-            <img src="/picture/background-welcome.jpg" alt="bg" class="invite-dresscode__background invite-dresscode__background--2">
+            <img src="/picture/background-welcome.png" alt="bg" class="invite-dresscode__background invite-dresscode__background--1">
+            <img src="/picture/background-welcome.png" alt="bg" class="invite-dresscode__background invite-dresscode__background--2">
         </template>
         <template #title>
             Дресс-код

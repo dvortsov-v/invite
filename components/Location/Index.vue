@@ -5,8 +5,8 @@
 <template>
     <Section class="invite-location">
         <template #background>
-            <img src="/picture/background-welcome.jpg" alt="bg" class="invite-location__background invite-location__background--1">
-            <img src="/picture/background-welcome.jpg" alt="bg" class="invite-location__background invite-location__background--2">
+            <img src="/picture/background-welcome.png" alt="bg" class="invite-location__background invite-location__background--1">
+            <img src="/picture/background-welcome.png" alt="bg" class="invite-location__background invite-location__background--2">
         </template>
         <template #title>
             Локация
