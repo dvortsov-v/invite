@@ -72,6 +72,10 @@
         right: 0;
         top: 0;
         animation: fly 1.8s linear forwards;
+
+        @media (max-width: 786px) {
+            display: none;
+        }
     }
 
     &__names {
