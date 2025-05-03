@@ -1,7 +1,3 @@
-<script setup lang="ts">
-
-</script>
-
 <template>
 <div class="invite-intro">
     <img src="/picture/star.png" alt="звезда" class="invite-intro__star" />

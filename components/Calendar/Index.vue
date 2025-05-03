@@ -1,7 +1,3 @@
-<script setup lang="ts">
-
-</script>
-
 <template>
     <div class="calendar">
         <h4 class="calendar__title">Август</h4>

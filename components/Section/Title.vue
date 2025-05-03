@@ -1,7 +1,3 @@
-<script setup lang="ts">
-
-</script>
-
 <template>
     <h3 class="invite-title">
         <slot></slot>
@@ -16,7 +12,6 @@
 
     @media (max-width: 640px) {
         font-size: rem(42, 16);
-        text-align: center;
     }
 
     @media (max-width: 414px) {

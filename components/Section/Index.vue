@@ -1,7 +1,3 @@
-<script setup lang="ts">
-
-</script>
-
 <template>
     <div class="invite-section">
         <slot name="background"></slot>
@@ -20,6 +16,9 @@
     color: #292929;
     padding-bottom: rem(100, 16);
 
+    @media (max-width: 1024px) {
+        padding-bottom: rem(35, 16);
+    }
     @media (max-width: 768px) {
         padding-bottom: rem(50, 16);
     }
