@@ -40,7 +40,7 @@
 }
 .invite-intro {
     position: relative;
-    background: #fff url('public/picture/bg-intro.png') center center no-repeat;
+    background: #fff url('/picture/bg-intro.png') center center no-repeat;
     background-size: 100% 100%;
     color: #292929;
 
