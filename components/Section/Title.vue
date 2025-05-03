@@ -9,6 +9,7 @@
     position: relative;
     font-size: rem(50, 16);
     font-family: 'AgoniaLyubvi';
+    text-align: center;
 
     @media (max-width: 640px) {
         font-size: rem(42, 16);
