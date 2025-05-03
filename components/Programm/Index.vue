@@ -50,6 +50,10 @@ const list = [
 .invite-programm {
     &__list {
         margin-top: rem(70, 16);
+
+        @media (max-width: 414px) {
+            margin-top: rem(40, 16);
+        }
     }
     &__item {
         display: flex;

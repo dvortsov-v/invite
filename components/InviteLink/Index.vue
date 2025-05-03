@@ -20,5 +20,9 @@
     display: inline-block;
     font-style: italic;
     font-family: 'TrajanPro3';
+
+    @media (max-width: 414px) {
+        margin-top: rem(25, 16);
+    }
 }
 </style>

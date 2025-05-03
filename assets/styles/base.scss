@@ -4,4 +4,19 @@ html {
   @media (max-width: 1440px) {
     font-size: vw(16, 1440);
   }
+  @media (max-width: 1200px) {
+    font-size: vw(16, 1200);
+  }
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+  @media (max-width: 768px) {
+    font-size: vw(16, 768);
+  }
+  @media (max-width: 640px) {
+    font-size: vw(16, 640);
+  }
+  @media (max-width: 414px) {
+    font-size: vw(14, 414);
+  }
 }

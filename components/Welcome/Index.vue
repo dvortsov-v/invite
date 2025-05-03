@@ -58,10 +58,28 @@
             left: 23%;
             top: 54%;
             transform: rotate(45deg);
+
+            @media (max-width: 1024px) {
+                left: 13%;
+            }
+            @media (max-width: 768px) {
+                display: none;
+            }
         }
         &--2 {
             right: 16%;
             top: 4%;
+
+            @media (max-width: 1024px) {
+                right: 6%;
+            }
+            @media (max-width: 768px) {
+                width: rem(200, 16);
+                height: rem(226, 16);
+            }
+            @media (max-width: 414px) {
+                display: none;
+            }
         }
     }
 

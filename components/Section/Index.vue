@@ -20,6 +20,13 @@
     color: #292929;
     padding-bottom: rem(100, 16);
 
+    @media (max-width: 768px) {
+        padding-bottom: rem(50, 16);
+    }
+    @media (max-width: 640px) {
+        padding-bottom: rem(15, 16);
+    }
+
     &__container {
         position: relative;
         display: flex;

@@ -31,15 +31,27 @@
         &--1 {
             left: 0;
             transform: translateX(-50%) rotate(-90deg);
+
+            @media (max-width: 414px) {
+                top: -80%;
+            }
         }
         &--2 {
             right: 0;
-            transform: translateX(50%) rotate(90deg);
+            transform: translateX(50%) scale(1, -1);
+
+            @media (max-width: 640px) {
+                top: -130%;
+            }
         }
     }
 
     &__description {
         margin-top: rem(70, 16);
+
+        @media (max-width: 414px) {
+            margin-top: rem(40, 16);
+        }
     }
 
     &__text {
@@ -54,6 +66,11 @@
         height: rem(200, 16);
         margin-top: rem(50, 16);
         transform: rotate(-15deg);
+
+        @media (max-width: 640px) {
+            height: rem(150, 16);
+            margin-top: rem(20, 16);
+        }
     }
 }
 

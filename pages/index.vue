@@ -31,6 +31,13 @@ useHead({
         &:first-child {
             margin-top: 0;
         }
+
+        @media (max-width: 768px) {
+            margin-top: rem(20, 16);
+        }
+        @media (max-width: 414px) {
+            margin-top: 0;
+        }
     }
 }
 </style>

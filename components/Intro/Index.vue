@@ -5,7 +5,7 @@
 <template>
 <div class="invite-intro">
     <img src="/picture/star.png" alt="звезда" class="invite-intro__star" />
-    <Container class="invite-intro__container">
+    <Container>
         <div class="invite-intro__wrapper">
             <div class="invite-intro__names">
                 <span class="invite-intro__name invite-intro__name--man">Борис</span>
@@ -48,17 +48,23 @@
     background-size: 100% 100%;
     color: #292929;
 
-    &__container {
-        height: 100%;
+    @media (max-width: 414px) {
+        background-size: 150% 100%;
     }
 
     &__wrapper {
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 100%;
         padding-top: rem(270, 16);
-        padding-bottom: rem(54, 16);
+
+        @media (max-width: 1024px) {
+            padding-top: rem(200, 16);
+        }
+
+        @media (max-width: 640px) {
+            padding-top: rem(120, 16);
+        }
     }
 
     &__star {
@@ -72,6 +78,11 @@
         display: flex;
         justify-content: center;
         position: relative;
+
+        @media (max-width: 1024px) {
+            flex-direction: column;
+            width: 100%;
+        }
     }
 
     &__name {
@@ -79,17 +90,43 @@
         font-family: 'AgoniaLyubvi';
         display: inline-block;
 
+        @media (max-width: 640px) {
+            font-size: rem(80, 16);
+        }
+        @media (max-width: 414px) {
+            font-size: rem(65, 16);
+        }
+
         &--man {
-            margin-top: -rem(50, 16);
+            margin-top: rem(-50, 16);
+
+            @media (max-width: 1024px) {
+                margin-top: 0;
+                align-self: flex-start;
+            }
         }
         &--woman {
             margin-top: rem(50, 16);
+
+            @media (max-width: 1024px) {
+                align-self: flex-end;
+            }
         }
     }
     &__and {
-        //color: #d0bb71;
         font-size: rem(100, 16);
         font-family: 'AgoniaLyubvi';
+
+        @media (max-width: 1024px) {
+            margin-top: rem(50, 16);
+            text-align: center;
+        }
+        @media (max-width: 640px) {
+            font-size: rem(80, 16);
+        }
+        @media (max-width: 414px) {
+            font-size: rem(65, 16);
+        }
     }
 
     &__subtitle {
@@ -98,8 +135,12 @@
         font-family: 'PlayfairDisplay';
         font-style: italic;
         text-align: center;
-        //color: #d0bb71;
         margin-top: rem(70, 16);
+
+        @media (max-width: 414px) {
+            margin-top: rem(40, 16);
+            font-size: rem(40, 16);
+        }
     }
 
     &__icon {
@@ -110,11 +151,19 @@
 
     &__title {
         margin-top: rem(120, 16);
+
+        @media (max-width: 414px) {
+            margin-top: rem(80, 16);
+        }
     }
 
 
     &__description {
         margin-top: rem(70, 16);
+
+        @media (max-width: 414px) {
+            margin-top: rem(40, 16);
+        }
     }
 
     &__text {

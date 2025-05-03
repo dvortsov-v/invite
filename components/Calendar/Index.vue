@@ -48,6 +48,11 @@
         grid-template-rows: repeat(5, 1fr);
         grid-gap: rem(10, 16);
         margin-top: rem(70, 16);
+
+        @media (max-width: 640px) {
+            margin-top: rem(50, 16);
+            grid-gap: rem(15, 16);
+        }
     }
 
     &__item {
@@ -72,6 +77,11 @@
         animation: rotating 3s linear forwards infinite;
         opacity: 0.65;
         fill: #72489e;
+
+        @media (max-width: 640px) {
+            width: rem(45, 16);
+            height: rem(45, 16);
+        }
     }
 
     &__number {
@@ -80,6 +90,10 @@
         font-family: 'TrajanPro3';
         font-weight: 400;
         text-align: center;
+
+        @media (max-width: 640px) {
+            font-size: rem(25, 16);
+        }
     }
 }
 </style>

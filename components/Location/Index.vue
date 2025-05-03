@@ -35,7 +35,10 @@
         top: -30%;
         z-index: -1;
         opacity: 0.2;
+        @media (max-width: 640px) {
+            top: 0;
 
+        }
         &--1 {
             left: 0;
             transform: translateX(-50%);
@@ -55,6 +58,10 @@
 
     &__description {
         margin-top: rem(70, 16);
+
+        @media (max-width: 414px) {
+            margin-top: rem(35, 16);
+        }
     }
 
     &__text {
@@ -88,6 +95,15 @@
         width: rem(250, 16);
         height: rem(90, 16);
         margin-top: rem(50, 16);
+
+        @media (max-width: 640px) {
+            height: rem(120, 16);
+            margin-top: rem(20, 16);
+        }
+
+        @media (max-width: 414px) {
+            height: rem(80, 16);
+        }
     }
 }
 

@@ -44,11 +44,24 @@ const list = [
             top: -50%;
             transform: translateX(-50%) rotate(-90deg);
             left: 0;
+
+            @media (max-width: 640px) {
+                left: -4%;
+            }
         }
         &--2 {
             top: 20%;
             transform: translateX(45%) rotate(-99deg);
             right: 0;
+
+            @media (max-width: 1200px) {
+                transform: translateX(45%)  scale(-1, 1);
+            }
+
+            @media (max-width: 640px) {
+                top: 0;
+                right: -15%;
+            }
         }
     }
 
@@ -57,11 +70,15 @@ const list = [
         flex-direction: column;
         align-items: center;
         margin-top: rem(70, 16);
+
+        @media (max-width: 414px) {
+            margin-top: rem(40, 16);
+        }
     }
 
     &__subtitle {
         position: relative;
-        font-size: rem(20, 16);
+        font-size: rem(25, 16);
         font-family: 'PlayfairDisplay';
         max-width: rem(700, 16);
         text-transform: uppercase;
@@ -71,12 +88,16 @@ const list = [
     }
     &__text {
         position: relative;
-        font-size: rem(14, 16);
+        font-size: rem(20, 16);
         font-family: 'TrajanPro3';
         max-width: rem(400, 16);
         text-align: center;
         margin-top: rem(15, 16);
         font-weight: 600;
+
+        @media (max-width: 1200px) {
+            max-width: rem(600, 16);
+        }
     }
 }
 

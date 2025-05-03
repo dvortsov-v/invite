@@ -30,6 +30,10 @@
         bottom: 0;
         transform: translateX(-50%) rotate(-9deg);
         left: 18%;
+
+        @media (max-width: 768px) {
+            width: rem(150, 16);
+        }
     }
 
     &__subtitle {
@@ -41,6 +45,10 @@
         text-align: center;
         margin-top: rem(70, 16);
         font-weight: 600;
+
+        @media (max-width: 414px) {
+            margin-top: rem(30, 16);
+        }
     }
     &__text {
         position: relative;
@@ -50,6 +58,10 @@
         text-align: center;
         margin-top: rem(15, 16);
         font-weight: 600;
+
+        @media (max-width: 414px) {
+            font-size: rem(16, 16);
+        }
     }
 }
 
