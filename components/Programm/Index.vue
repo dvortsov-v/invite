@@ -11,7 +11,7 @@ const list = [
         text: 'Свадебный ужин',
     },
     {
-        img: '/picture/disco.png',
+        img: 'disco.png',
         time: '22:00',
         text: 'Дискотека',
     },
@@ -37,7 +37,7 @@ const list = [
                         :class="`invite-programm__icon--${item.svg}`"
                         class="invite-programm__icon"
                     />
-                    <img v-else-if="item.img" :src="item.img" alt="" class="invite-programm__img">
+                    <img v-else-if="item.img" :src="`/picture/${item.img}`" alt="" class="invite-programm__img">
                     <div class="invite-programm__time">{{item.time}}</div>
                 </div>
                 <div class="invite-programm__text">{{item.text}}</div>
