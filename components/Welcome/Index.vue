@@ -10,17 +10,17 @@
             <svg-icon name="constellation_1" class="invite-welcome__constellation invite-welcome__constellation--1"/>
             <svg-icon name="constellation_2" class="invite-welcome__constellation invite-welcome__constellation--2"/>
         </template>
-        <template #title>
-            Дорогие гости
-        </template>
-        <div class="invite-welcome__description">
-            <p class="invite-welcome__text">
-                Приглашаем Вас разделить с нами радость особенного для нас события и стать частью  нашей семейной истории!
-            </p>
-            <p class="invite-welcome__text">
-                Ждём Вас
-            </p>
-        </div>
+<!--        <template #title>-->
+<!--            Дорогие гости-->
+<!--        </template>-->
+<!--        <div class="invite-welcome__description">-->
+<!--            <p class="invite-welcome__text">-->
+<!--                Приглашаем Вас разделить с нами радость особенного для нас события и стать частью  нашей семейной истории!-->
+<!--            </p>-->
+<!--            <p class="invite-welcome__text">-->
+<!--                Ждём Вас-->
+<!--            </p>-->
+<!--        </div>-->
         <Calendar class="invite-welcome__calendar"/>
     </Section>
 </template>

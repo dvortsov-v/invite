@@ -15,6 +15,17 @@
             <h3 class="invite-intro__subtitle">
                 08.08.2025
             </h3>
+            <SectionTitle class="invite-intro__title">
+                Дорогие гости
+            </SectionTitle>
+            <div class="invite-intro__description">
+                <p class="invite-intro__text">
+                    Приглашаем Вас разделить с нами радость особенного для нас события и стать частью  нашей семейной истории!
+                </p>
+                <p class="invite-intro__text">
+                    Ждём Вас
+                </p>
+            </div>
         </div>
     </Container>
 </div>
@@ -96,6 +107,27 @@
         width: 300px;
         height: 82px;
         margin-top: auto;
+    }
+
+    &__title {
+        margin-top: 120px;
+    }
+
+
+    &__description {
+        margin-top: 70px;
+    }
+
+    &__text {
+        position: relative;
+        font-size: 25px;
+        font-family: 'PlayfairDisplay';
+        max-width: 700px;
+        text-align: center;
+
+        &:nth-child(n + 2) {
+            margin-top: 40px;
+        }
     }
 }
 </style>

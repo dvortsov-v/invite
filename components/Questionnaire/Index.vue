@@ -5,7 +5,7 @@
 <template>
     <Section class="invite-detail">
         <template #background>
-            <img src="/picture/background-welcome.png" alt="bg" class="invite-detail__background">
+            <img src="/picture/heart-star.png" alt="bg" class="invite-detail__star">
         </template>
         <template #title>
             Анкета гостя
@@ -22,14 +22,14 @@
 
 <style scoped lang="scss">
 .invite-detail {
-    &__background {
-        width: 1090px;
+    &__star {
+        width: 300px;
         position: absolute;
         z-index: -1;
-        opacity: 0.5;
-        top: 90%;
-        transform: translateX(-50%) rotate(-90deg);
-        left: 50%;
+        opacity: 0.36;
+        bottom: 0;
+        transform: translateX(-50%) rotate(-9deg);
+        left: 18%;
     }
 
     &__subtitle {

@@ -7,13 +7,13 @@ useHead({
 <template>
     <div class="invite">
         <div class="invite__wrapper">
-            <Intro class="invite__intro"/>
-            <Welcome class="invite__time"/>
-            <Location class="invite__location"/>
-            <Programm class="invite__programm"/>
-            <Dresscode class="invite__dresscode"/>
-            <Detail class="invite__detail"/>
-            <Questionnaire class="invite__questionnaire"/>
+            <Intro class="invite__section"/>
+            <Welcome class="invite__section"/>
+            <Location class="invite__section"/>
+            <Programm class="invite__section"/>
+            <Dresscode class="invite__section"/>
+            <Detail class="invite__section"/>
+            <Questionnaire class="invite__section"/>
         </div>
     </div>
 </template>
@@ -21,5 +21,13 @@ useHead({
 <style scoped lang="scss">
 .invite {
     overflow: hidden;
+
+    &__section {
+        margin-top: 40px;
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
 }
 </style>
