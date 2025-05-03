@@ -1,6 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
+  app: {
+    baseURL: '/invite/',
+  },
   css: [
     '~/assets/styles/fonts.scss',
     '~/assets/styles/app.scss',
