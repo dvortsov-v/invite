@@ -22,7 +22,7 @@
 <style scoped lang="scss">
 .invite-dresscode {
     &__background {
-        width: 1090px;
+        width: rem(1090, 16);
         position: absolute;
         top: -100%;
         z-index: -1;
@@ -39,20 +39,20 @@
     }
 
     &__description {
-        margin-top: 70px;
+        margin-top: rem(70, 16);
     }
 
     &__text {
         position: relative;
-        font-size: 25px;
+        font-size: rem(25, 16);
         font-family: 'PlayfairDisplay';
-        max-width: 700px;
+        max-width: rem(700, 16);
         text-align: center;
     }
 
     &__constellation {
-        height: 200px;
-        margin-top: 50px;
+        height: rem(200, 16);
+        margin-top: rem(50, 16);
         transform: rotate(-15deg);
     }
 }

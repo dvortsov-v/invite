@@ -10,17 +10,6 @@
             <svg-icon name="constellation_1" class="invite-welcome__constellation invite-welcome__constellation--1"/>
             <svg-icon name="constellation_2" class="invite-welcome__constellation invite-welcome__constellation--2"/>
         </template>
-<!--        <template #title>-->
-<!--            Дорогие гости-->
-<!--        </template>-->
-<!--        <div class="invite-welcome__description">-->
-<!--            <p class="invite-welcome__text">-->
-<!--                Приглашаем Вас разделить с нами радость особенного для нас события и стать частью  нашей семейной истории!-->
-<!--            </p>-->
-<!--            <p class="invite-welcome__text">-->
-<!--                Ждём Вас-->
-<!--            </p>-->
-<!--        </div>-->
         <Calendar class="invite-welcome__calendar"/>
     </Section>
 </template>
@@ -28,7 +17,7 @@
 <style scoped lang="scss">
 .invite-welcome {
     &__background {
-        width: 1090px;
+        width: rem(1090, 16);
         position: absolute;
         opacity: 0.4;
 
@@ -44,34 +33,26 @@
         }
     }
 
-    &__container {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 12vh;
-    }
-
     &__description {
-        margin-top: 70px;
+        margin-top: rem(70, 16);
     }
 
     &__text {
         position: relative;
-        font-size: 25px;
+        font-size: rem(25, 16);
         font-family: 'PlayfairDisplay';
-        max-width: 700px;
+        max-width: rem(700, 16);
         text-align: center;
 
         &:nth-child(n + 2) {
-            margin-top: 40px;
+            margin-top: rem(40, 16);
         }
     }
 
     &__constellation {
         position: absolute;
-        width: 300px;
-        height: 340px;
+        width: rem(300, 16);
+        height: rem(340, 16);
 
         &--1 {
             left: 23%;
@@ -85,7 +66,7 @@
     }
 
     &__calendar {
-        margin-top: 70px;
+        margin-top: rem(70, 16);
     }
 }
 

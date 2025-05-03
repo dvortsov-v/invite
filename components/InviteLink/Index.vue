@@ -9,12 +9,12 @@
 <style scoped lang="scss">
 
 .invite-link {
-    margin: 40px auto 0;
-    min-height: 40px;
-    min-width: 250px;
+    margin: rem(40, 16) auto 0;
+    min-height: rem(40, 16);
+    min-width: rem(250, 16);
     background-image: linear-gradient(90deg, #aa82d4 50%, #e0c8f7);
-    border-radius: 20px;
-    padding: 15px;
+    border-radius: rem(20, 16);
+    padding: rem(15, 16);
     color: #fff;
     text-align: center;
     display: inline-block;

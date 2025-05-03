@@ -44,7 +44,6 @@
 }
 .invite-intro {
     position: relative;
-    height: 100vh;
     background: #fff url('public/picture/bg-intro.png') center center no-repeat;
     background-size: 100% 100%;
     color: #292929;
@@ -58,8 +57,8 @@
         flex-direction: column;
         align-items: center;
         height: 100%;
-        padding-top: 25vh;
-        padding-bottom: 5vh;
+        padding-top: rem(270, 16);
+        padding-bottom: rem(54, 16);
     }
 
     &__star {
@@ -76,57 +75,57 @@
     }
 
     &__name {
-        font-size: 100px;
+        font-size: rem(100, 16);
         font-family: 'AgoniaLyubvi';
         display: inline-block;
 
         &--man {
-            margin-top: -50px;
+            margin-top: -rem(50, 16);
         }
         &--woman {
-            margin-top: 50px;
+            margin-top: rem(50, 16);
         }
     }
     &__and {
         //color: #d0bb71;
-        font-size: 100px;
+        font-size: rem(100, 16);
         font-family: 'AgoniaLyubvi';
     }
 
     &__subtitle {
-        font-size: 50px;
-        max-width: 945px;
+        font-size: rem(50, 16);
+        max-width: rem(945, 16);
         font-family: 'PlayfairDisplay';
         font-style: italic;
         text-align: center;
         //color: #d0bb71;
-        margin-top: 70px;
+        margin-top: rem(70, 16);
     }
 
     &__icon {
-        width: 300px;
-        height: 82px;
+        width: rem(300, 16);
+        height: rem(82, 16);
         margin-top: auto;
     }
 
     &__title {
-        margin-top: 120px;
+        margin-top: rem(120, 16);
     }
 
 
     &__description {
-        margin-top: 70px;
+        margin-top: rem(70, 16);
     }
 
     &__text {
         position: relative;
-        font-size: 25px;
+        font-size: rem(25, 16);
         font-family: 'PlayfairDisplay';
-        max-width: 700px;
+        max-width: rem(700, 16);
         text-align: center;
 
         &:nth-child(n + 2) {
-            margin-top: 40px;
+            margin-top: rem(40, 16);
         }
     }
 }

@@ -30,7 +30,7 @@
 <style scoped lang="scss">
 .invite-location {
     &__background {
-        width: 1090px;
+        width: rem(1090, 16);
         position: absolute;
         top: -30%;
         z-index: -1;
@@ -50,44 +50,44 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-top: 5vh;
+        padding-top: rem(54, 16);
     }
 
     &__description {
-        margin-top: 70px;
+        margin-top: rem(70, 16);
     }
 
     &__text {
         position: relative;
-        font-size: 25px;
+        font-size: rem(25, 16);
         font-family: 'PlayfairDisplay';
-        max-width: 700px;
+        max-width: rem(700, 16);
         text-align: center;
     }
 
     &__place {
         position: relative;
-        font-size: 30px;
+        font-size: rem(30, 16);
         font-family: 'PlayfairDisplay';
-        max-width: 700px;
+        max-width: rem(700, 16);
         text-align: center;
         text-transform: uppercase;
-        margin-top: 20px;
+        margin-top: rem(20, 16);
     }
 
     &__address {
         position: relative;
-        font-size: 25px;
+        font-size: rem(25, 16);
         font-family: 'PlayfairDisplay';
-        max-width: 700px;
+        max-width: rem(700, 16);
         text-align: center;
-        margin-top: 20px;
+        margin-top: rem(20, 16);
     }
 
     &__constellation {
-        width: 250px;
-        height: 90px;
-        margin-top: 50px;
+        width: rem(250, 16);
+        height: rem(90, 16);
+        margin-top: rem(50, 16);
     }
 }
 

@@ -18,14 +18,14 @@
 .invite-section {
     position: relative;
     color: #292929;
-    padding-bottom: 100px;
+    padding-bottom: rem(100, 16);
 
     &__container {
         position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-top: 5vh;
+        padding-top: rem(54, 16);
     }
 }
 </style>

@@ -49,7 +49,7 @@ const list = [
 <style scoped lang="scss">
 .invite-programm {
     &__list {
-        margin-top: 70px;
+        margin-top: rem(70, 16);
     }
     &__item {
         display: flex;
@@ -59,10 +59,10 @@ const list = [
         &::after {
             content: '';
             display: block;
-            width: 2px;
+            width: rem(2, 16);
             background: #292929;
-            height: 35px;
-            margin-top: 5px;
+            height: rem(35, 16);
+            margin-top: rem(5, 16);
         }
 
         &:last-child {
@@ -78,22 +78,22 @@ const list = [
 
 
     &__description {
-        margin-top: 70px;
+        margin-top: rem(70, 16);
     }
 
     &__text {
         position: relative;
-        font-size: 25px;
+        font-size: rem(25, 16);
         font-family: 'PlayfairDisplay';
-        max-width: 700px;
+        max-width: rem(700, 16);
         text-align: center;
     }
 
     &__time {
         position: relative;
-        font-size: 30px;
+        font-size: rem(30, 16);
         font-family: 'PlayfairDisplay';
-        max-width: 700px;
+        max-width: rem(700, 16);
         text-align: center;
         text-transform: uppercase;
         color: #9151d4;
@@ -101,16 +101,16 @@ const list = [
 
     &__icon,
     &__img {
-        width: 35px;
-        height: 35px;
+        width: rem(35, 16);
+        height: rem(35, 16);
         fill: #9151d4;
-        margin-right: 10px;
+        margin-right: rem(10, 16);
     }
 
     &__icon {
         &--time {
-            width: 25px;
-            height: 25px;
+            width: rem(25, 16);
+            height: rem(25, 16);
         }
     }
 }

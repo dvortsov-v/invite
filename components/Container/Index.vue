@@ -9,19 +9,10 @@
 </template>
 
 <style scoped lang="scss">
+
 .container {
-    max-width: 1344px;
+    max-width: rem(1344, 16);
     margin-left: auto;
     margin-right: auto;
-
-    @media (max-width: 1344px) {
-        max-width: initial;
-        padding-left: 32px;
-        padding-right: 32px;
-    }
-    @media (max-width: 670px) {
-        padding-left: 16px;
-        padding-right: 16px;
-    }
 }
 </style>

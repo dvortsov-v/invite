@@ -18,12 +18,15 @@ useHead({
     </div>
 </template>
 
+<style lang="scss">
+@import "assets/styles/functions.scss";
+</style>
 <style scoped lang="scss">
 .invite {
     overflow: hidden;
 
     &__section {
-        margin-top: 40px;
+        margin-top: rem(40, 16);
 
         &:first-child {
             margin-top: 0;

@@ -35,7 +35,7 @@ const list = [
 <style scoped lang="scss">
 .invite-detail {
     &__background {
-        width: 1090px;
+        width: rem(1090, 16);
         position: absolute;
         z-index: -1;
         opacity: 0.5;
@@ -47,7 +47,7 @@ const list = [
         }
         &--2 {
             top: 20%;
-            transform: translateX(45%) rotate(-90deg);
+            transform: translateX(45%) rotate(-99deg);
             right: 0;
         }
     }
@@ -56,25 +56,27 @@ const list = [
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 70px;
+        margin-top: rem(70, 16);
     }
 
     &__subtitle {
         position: relative;
-        font-size: 20px;
+        font-size: rem(20, 16);
         font-family: 'PlayfairDisplay';
-        max-width: 700px;
+        max-width: rem(700, 16);
         text-transform: uppercase;
         text-align: center;
         color: #9151d4;
+        font-weight: 600;
     }
     &__text {
         position: relative;
-        font-size: 14px;
+        font-size: rem(14, 16);
         font-family: 'TrajanPro3';
-        max-width: 400px;
+        max-width: rem(400, 16);
         text-align: center;
-        margin-top: 15px;
+        margin-top: rem(15, 16);
+        font-weight: 600;
     }
 }
 
