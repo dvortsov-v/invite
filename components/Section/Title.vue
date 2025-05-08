@@ -10,6 +10,7 @@
     font-size: rem(50, 16);
     font-family: 'AgoniaLyubvi';
     text-align: center;
+    line-height: normal;
 
     @media (max-width: 640px) {
         font-size: rem(42, 16);
