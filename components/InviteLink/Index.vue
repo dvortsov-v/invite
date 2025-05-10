@@ -1,12 +1,12 @@
-<script>
-   const props = defineProps({
-        animated: {type: Boolean, default: false},
-    })
+<script setup>
+const props = defineProps({
+    animated: {type: Boolean, default: false},
+});
 
    const classes = computed(() => ({'invite-link--animated': props.animated}))
 </script>
 <template>
-    <a v-bind="$attrs" target="_blank" class="invite-link"><slot></slot></a>
+    <a v-bind="$attrs" target="_blank" :class="classes" class="invite-link"><slot></slot></a>
 </template>
 
 <style scoped lang="scss">
