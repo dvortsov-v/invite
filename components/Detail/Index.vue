@@ -27,7 +27,7 @@ const list = [
             <p class="invite-detail__text">
                 {{ item.text }}
             </p>
-            <InviteLink v-if="item.subtitle === 'Подарки'" href="https://yandex.ru/maps/-/CHfOBC0J" target="_blank" class="invite-detail__wish">Wish list</InviteLink>
+            <InviteLink v-if="item.subtitle === 'Подарки'" href="https://followish.io/mywishlist/urmi5bt59xnq1q" target="_blank" class="invite-detail__wish">Wish list</InviteLink>
         </div>
     </Section>
 </template>

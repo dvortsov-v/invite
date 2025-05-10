@@ -9,7 +9,7 @@
         <h4 class="invite-questionnaire__subtitle">
             Подтвердите, пожалуйста, свое присутствие до 01.07.2025
         </h4>
-        <InviteLink href="https://yandex.ru/maps/-/CHfOBC0J" target="_blank" class="invite-questionnaire__wish">Заполнить анкету</InviteLink>
+        <InviteLink href="https://docs.google.com/forms/d/e/1FAIpQLSdpgOz9zumCLFLRYS6eClMR1HWT2G6J9C-bp5IEpTNnrWTylw/viewform" animated target="_blank" class="invite-questionnaire__wish">Заполнить анкету</InviteLink>
         <p class="invite-questionnaire__text">
             С любовью Борис и Анна
         </p>
